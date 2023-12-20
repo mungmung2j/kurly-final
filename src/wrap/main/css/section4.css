@@ -1,0 +1,19 @@
+#section4 {
+  width: 100%;
+  padding: 80px 0 0 0;
+}
+#section4 .container {
+  width: 100%;
+  max-width: 1050px;
+  margin: 0 auto;
+}
+#section4 .container .content {
+  width: 100%;
+}
+#section4 .container .content a {
+  display: block;
+  width: 100%;
+}
+#section4 .container .content a img {
+  width: 100%;
+}

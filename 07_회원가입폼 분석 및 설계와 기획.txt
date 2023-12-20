@@ -1,0 +1,15 @@
+회원가입폼 분석 및 설계와 기획
+풀스택(Full Stack) = 프론트 앤드(Front-end) + 백앤드(Back-end) + REST API
+백앤드 => 데이터베이스(MYSQL), 서버사이드 스크립트언어(PHP)
+
+프론트앤드(회원가입폼 데이터) => AXIOS API / AJAX API[Rest API][text, csv, xml, json] => [서버사이드 스크립트언어(PH0,JSP,ASP)]  => 데이터베이스에 저장[MYSQL, MSSQL, ORACLE]
+
+회원가입폼 UI 디자인 레이아웃 설계
+
+컨텐츠 너비 640PX - 159PX - 150PX => 331PX
+행간 간격 10PX
+좌우 여백 20PX
+좌측박스 139PX + 20PX  absolute
+우측박스 130PX + 20PX  absolute
+가운데박스 100% 331PX
+

@@ -1,0 +1,92 @@
+폼전송(REACT) => REST API(AXIOS) =>웹서버(PHP) => 데이터베이스(MYSQL)
+데이터베이스(MYSQL) => 웹서버(PHP) => 응답 => REST API(AXIOS) => REACT
+
+1. 전송버튼 클릭시 빈칸 또는 입력제한 조건이 맞아야 데이터를 전송 => 프론트
+
+관리자페이지(웹서버, 데이터베이스)
+sjm6715.dothome.co.kr/myadmin
+
+[폴더이름]
+kurly_week_11
+
+※필수입력사항
+-아이디
+-중복확인 아이디(DB1에 저장된 아이디와 비교 중복된 아이디 가입불가)
+-비밀번호
+-비밀번호 확인
+-이름
+-이메일
+-중복확인 이메일(DB2에 저장된 이메일과 비교 중복된 아이디 가입불가)
+-휴대폰
+-휴대폰 인증 유무
+-주소
+-이용약관동의 필수 입력사항 => 3개
+
+※선택입력사항
+추가입력사항
+-친구초대 추천인 아이디
+    ( DB3에 저장된 이메일과 비교 중복된 아이디 가입불가)
+// 1. 회원가입정보
+// 2. 테이블에 데이터 입력
+// 3. 테이블에 데이터 입력 응답 확인
+// 4. 관리자 페이지에서 테이블 데이터 입력 확인
+
+2. 데이터베이스 접속 성공확인 테스트
+member_signup_insert_test1.php
+
+3.회원가입테이블에 더미데이터 1명 입력 저장 =>백
+member_signup_insert_test2.php
+
+4.회원가입테이블에 더미데이터 5명 입력 저장 =>백
+member_signup_insert_test3.php
+
+5-1.DB1에 저장된 이메일과 비교 중복된 아이디 가입불가 => 백
+member_id_check.php
+
+5-2.DB2에 저장된 이메일과 비교 중복된 아이디 가입불가 => 백
+member_email_check.php
+
+5-3.DB3에 저장된 가입된 추천인 아이디 체크 => 백
+member_id_check.php
+
+6. 폼전송 => REST API => 백
+member_signup_insert.php
+
+
+7. 웹서버 => PHP => DB 저장 => 응답 => 백
+8. 응답 확인 => 프론트
+9. 닷홈 관리자 페이지에서 DB 회원가입 테이블 확인 => 백
+
+
+
+<?
+//CORS 크로스 오리진
+    //보내는 URL과 받는 URL이 서로 다르면 CORS 정책 따라 서버파일 헤더에
+    //접속 허용한다고 해준다.
+    //리액트 url
+    //http://localhost:3000/
+    //닷홈
+    //https://sjm6715.com/
+    header('Access-Control-Allow-Origin: *');
+    header('Access-Control-Allow-Headers: *');
+
+    //리액트 axios url
+    //유료도메인,유료호스팅,ssl인증서 https://sjm6715.com/kurly_week_11/member_signup_insert.php
+    //무료도메인,무료호스팅 http://sjm6715.dothome.co.kr/kurly_week_11/member_signup_insert.php
+    //유료도메인,유료호스팅 http://sjm6715.com/kurly_week_11/member_signup_insert.php
+
+    ?>
+
+    // 모든 필수 입력 사항 반드시 빈칸은 안된다.
+        // ※ 필수입력사항
+        // 1. 아이디
+        // 2. 중복확인 아이디(DB에 저장된 아이디와 비교 중복된 아이디 가입불가)
+        // 3. 비밀번호
+        // 4. 비밀번호확인
+        // 5. 이름
+        // 6. 이메일
+        // 7. 중복확인 이메일(DB에 저장된 이메일와 비교 중복된 이메일 가입불가)
+        // 8. 휴대폰
+        // 9. 휴대폰 인증 유무
+        //10. 주소
+        //11. 이용약관동의 필수 입력사항 => 3개

@@ -1,0 +1,23 @@
+#goTop {
+    z-index: 4;
+    position: fixed;
+    right: 30px;
+    width:58px;
+    height:58px;
+    border-radius: 50%;
+
+    opacity: 0;
+    bottom: -100px;
+    transition:all 0.6s;
+    &.on{
+        opacity: 1;
+        bottom: 40px;   
+    }
+    a {
+        width:100%;
+        display: block;
+        img {
+            width:100%;
+        }
+    }
+}

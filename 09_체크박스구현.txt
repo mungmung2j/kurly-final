@@ -1,0 +1,81 @@
+체크박스구현.txt
+
+
+    const [state, setState] = React.useState({
+        isSub1Chk1: false, 
+        isSub1Chk2: false, 
+        isSub1Chk3: false, 
+        isSub1Chk4: false, 
+        isSub1Chk5: false, 
+        isSub1Chk6: false, 
+        isSub1Chk7: false, 
+        isSub1Chk8: false, 
+        isSub1Chk9: false, 
+        isSub1Chk10: false
+    });
+
+    const onClickSub1Check=(e, n)=>{
+        e.preventDefault();
+        if(n===0){
+            setState({
+                ...state,
+                isSub1Chk1: !state.isSub1Chk1
+            })
+        }        
+        else if(n===1){
+            setState({
+                ...state,
+                isSub1Chk2: !state.isSub1Chk2
+            })
+        }
+        else if(n===2){
+            setState({
+                ...state,
+                isSub1Chk3: !state.isSub1Chk3
+            })
+        }
+        else if(n===3){
+            setState({
+                ...state,
+                isSub1Chk4: !state.isSub1Chk4
+            })
+        }
+        else if(n===4){
+            setState({
+                ...state,
+                isSub1Chk5: !state.isSub1Chk5
+            })
+        }
+        else if(n===5){
+            setState({
+                ...state,
+                isSub1Chk6: !state.isSub1Chk6
+            })
+        }
+        else if(n===6){
+            setState({
+                ...state,
+                isSub1Chk7: !state.isSub1Chk7
+            })
+        }
+        else if(n===7){
+            setState({
+                ...state,
+                isSub1Chk8: !state.isSub1Chk8
+            })
+        }
+        else if(n===8){
+            setState({
+                ...state,
+                isSub1Chk9: !state.isSub1Chk9
+            })
+        }
+        else if(n===9){
+            setState({
+                ...state,
+                isSub1Chk10: !state.isSub1Chk10
+            })
+        }
+
+        
+    }

@@ -1,0 +1,53 @@
+#mainModal {
+    z-index: 5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0, 0);
+    .container {
+        width: 100%;
+        height: 100%;
+        .content {
+            width:1050px;
+            height: 100%;
+            margin:0 auto;
+            display: flex;
+            justify-content:flex-start;
+            align-items: center;
+            .modal-wrap {  
+                width: 440px;
+                height: 690px;
+                box-shadow: 0 0 7px rgba(0,0,0, 0.2);   
+                border-radius: 10px;
+                overflow: hidden;                           
+                ul {
+                    width: 100%;
+                    li {
+                        width: 100%;
+                        .img-box {
+                            width: 100%;
+                            img {width: 100%;}
+                        }
+                        .button-box {
+                            width: 100%;
+                            height: 60px;
+                            border-top: 1px solid #fff;
+                            display: flex;
+                            button {
+                                width: 50%;
+                                height: 100%;
+                                font-size: 15px;
+                                color:#000;
+                                background: #fff;
+                                border: 0;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

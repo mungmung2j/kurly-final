@@ -1,0 +1,31 @@
+#section2 {
+    .container {
+        .content {
+            .slide-container {
+                .slide-view {
+                    .slide-wrap {
+                        width: 356px * 3;
+                        .slide {
+                            width: 356px;                            
+                            .gap {
+                                h2 {
+                                    font-size: 28px;
+                                    color:#111;
+                                    font-weight: 500;
+                                    line-height: 130%;
+                                }
+                                h3 {
+                                    font-size: 16px;
+                                    color:#333;
+                                    font-weight: 500;
+                                    padding:15px 0 25px 0;
+                                }
+                                h4 {font-size: 14px;color:#999;}
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

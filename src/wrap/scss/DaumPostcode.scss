@@ -1,0 +1,209 @@
+#daumPostcode {
+    z-index: 5;
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: #fff;    
+    #modal {       
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .container {            
+            width: 530px;
+            height: 600px;
+            background: #fff;
+            border:1px solid #999;
+            .title {                
+                width: 100%;
+                height: 32px;
+                background: rgb(255, 222, 93);
+                display: flex;
+                justify-content: space-between;
+                border-bottom: 1px solid #ccc;                
+                .left {
+                    height: 100%;                    
+                    h1 {
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        padding:  0 0 0 4px;
+                        img {
+                            width: 20px;
+                        }
+                        span {
+                            font-size: 12px;
+                            margin: 0 0 0 10px;
+                            color:#000;
+                        }
+                    }
+                }
+                .right {
+                    height: 100%; 
+                    button {
+                        width: 44px;
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border:0;
+                        background: transparent;
+                        cursor: pointer;
+                        span {
+                            color:#666;
+                            font-size: 25px;
+                            font-weight: 300;
+                            font-family: 'Roboto';
+                            transform: translateY(-4px);                            
+                        }
+                    }
+                }
+            }
+            .content {
+                position: relative;                
+                width: 100%;
+                ul {
+                    position: relative;
+                    z-index: 1;
+                    width: 100%;
+                    padding: 39px 29px;
+                    li {
+                        width: 100%;
+                        padding:  0 0 10px 0;
+                        .gap {
+                            width: 100%;                            
+                            &.row1 {
+                                text-align: center;
+                                h2 {
+                                    font-size: 24px;
+                                    padding: 0 0 13px 0;
+                                    strong {
+                                        color: #5f0080;
+                                        font-weight: 600;
+                                    }
+                                    span {
+                                        color: #444;
+                                        font-weight: 600;
+                                    }
+                                }
+                                h3 {
+                                    font-size: 16px;
+                                    padding: 0 0 30px 0;
+                                }    
+                            }
+                            &.row2 {  
+                                position: relative;                              
+                                padding: 0 130px 0 0;
+                                input {
+                                    width:100%;
+                                    height: 44px;
+                                    border: 1px solid #ddd;
+                                    background: #fff;
+                                    border-radius: 3px;
+                                    outline: 1px solid transparent;
+                                    outline-offset: -1px;
+                                    transition: all 0.3s;
+                                    padding: 0 15px;
+                                    &:focus {
+                                        outline: 1px solid #777;
+                                    }
+                                }
+                                button {
+                                    position: absolute;
+                                    right: 0;
+                                    top: 0;
+                                    width:120px;
+                                    height: 44px;
+                                    border: 1px solid #5f0080;
+                                    background: #fff;
+                                    border-radius: 3px;
+                                    color: #5f0080;                                    
+                                    cursor: pointer;                                    
+                                    img {
+                                        width: 25px;
+                                        transform: translateX(3px) translateY(2px);
+                                    }
+                                    span {
+                                        font-weight: 600;  
+                                        transform: translateY(-2px);
+                                    }
+                                }    
+                            }
+                            &.row3 {
+                                input {
+                                    width:100%;
+                                    height: 44px;
+                                    border: 1px solid #ddd;
+                                    background: #fff;
+                                    border-radius: 3px;
+                                    outline: 1px solid transparent;
+                                    outline-offset: -1px;
+                                    transition: all 0.3s;
+                                    padding: 0 15px;
+                                    &:focus {
+                                        outline: 1px solid #777;
+                                    }
+                                }                                  
+                            }
+                            &.row4 {
+                                p {
+                                    font-size: 12px;
+                                    line-height: 140%;
+                                    color:#999;
+                                }                                  
+                            }
+                            &.row5 {
+                                padding: 15px 0 20px 0;
+                                button {                                   
+                                    width:100%;
+                                    height: 44px;
+                                    border: 1px solid #5f0080;
+                                    background: #5f0080;
+                                    border-radius: 3px;
+                                    color: #fff;                                    
+                                    cursor: pointer;
+                                    font-weight: 600;
+                                }                                  
+                            }
+                            &.row6 {
+                                h4 {
+                                    padding: 0 0 10px 0;
+                                    img {
+                                        width: 14px;
+                                    }
+                                    span {
+                                        margin: 0 0 0 8px;
+                                        color: rgb(240, 63, 64);
+                                    }
+                                }                                  
+                                div {
+                                    width: 100%;
+                                    padding: 0 0 0 22px;
+                                    display: flex;
+                                    justify-content: space-between;
+                                    p {
+                                        font-size: 13px;
+                                        color: #444;
+                                    }
+                                    a {
+                                        color: #444;                                        
+                                        span {
+                                            font-size: 12px;
+                                            margin: 0 5px 0 0;
+                                        }
+                                        img {
+                                            width: 10px; 
+                                        }
+                                    }
+                                }                                  
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

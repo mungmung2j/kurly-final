@@ -1,0 +1,109 @@
+아이디 이메일 중복확인 PHP 데이터베이스
+
+1.유료도메인신청하기
+도메인 > 도메인 검색 EVENT > sjm6715
+2.유료전환
+서비스변경 >500 이상
+3.웹보안SSL 보안신청
+상세보기 > 추가연결도메인 > 등록 > SSL신청
+
+다음시간에 배포
+닷홈 깃허브 넷틀리파이
+
+관리자 페이지에 로그인
+sjm6715.dothome.co.kr/myadmin
+
+닷홈
+sjm6715.dothome.co.kr
+
+
+URL sjm6715.dothome.co.kr
+아이디 sjm6715
+비밀번호
+
+데이터베이스
+
+1. 테이블생성
+2. 테이블에 데이터 저장하기
+3. FTP PHP 업로드
+4. 아이디 중복검사(AXIOS 구현) => PHP =>데이터베이스=> PHP 응답 => REST API
+
+테이블이름 kurly_table_11
+데이터베이스 필드
+
+1.인덱스번호 자동증가 숫자 idx
+2.아이디 문자 16 userId
+3.비밀번호 문자 16 userPw
+4.이름 문자 50 userName
+5.이메일 문자 250 userEmail
+6.휴대폰 문자 01044444444 13자 문자 userHp
+7.주소1 250 userAddr1
+8.주소2 100 userAddr2
+9.성별 4 userGender
+10.생년월일 1998-04-04 문자 10 userBirth
+11.추가입력사항 문자 250 userChooga
+12.추천인아이디 문자 16 userChoogaId
+13.참여이벤트명 문자 100 userChoogaEvent
+14.이용약관동의 문자 1000 userService
+15.가입일 가입일시간 날짜 userGaibDate
+
+idx
+userId
+userPw
+userName
+userEmail
+userHp
+userAddr1
+userAddr2
+userGender
+userBirth
+userChooga
+userChoogaId
+userChoogaEvent
+userService
+userGaibDate
+
+
+
+자동입력저장
+idx 자동 증가 번호
+userGaibDate 자동 현재 날짜 시간을 저장
+
+사용자 13개만 저장
+userId, userPw, userName, userEmail, userHp, userAddr1, userAddr2, userGender, userBirth, userChooga, userChoogaId, userChoogaEvent, userService
+
+
+CREATE TABLE `kurly_table_11` (
+  `idx` int NOT NULL COMMENT '자동 증가 번호',
+  `userId` varchar(16) COLLATE utf8mb4_general_ci NOT NULL COMMENT '아이디',
+  `userPw` varchar(16) COLLATE utf8mb4_general_ci NOT NULL COMMENT '비밀번호',
+  `userName` varchar(50) COLLATE utf8mb4_general_ci NOT NULL COMMENT '이름',
+  `userEmail` varchar(250) COLLATE utf8mb4_general_ci NOT NULL COMMENT '이메일',
+  `userHp` varchar(13) COLLATE utf8mb4_general_ci NOT NULL COMMENT '휴대폰',
+  `userAddr1` varchar(250) COLLATE utf8mb4_general_ci NOT NULL COMMENT '주소1',
+  `userAddr2` varchar(100) COLLATE utf8mb4_general_ci NOT NULL COMMENT '주소2',
+  `userGender` varchar(4) COLLATE utf8mb4_general_ci NOT NULL COMMENT '성별',
+  `userBirth` varchar(10) COLLATE utf8mb4_general_ci NOT NULL COMMENT '생년월일',
+  `userChooga` varchar(250) COLLATE utf8mb4_general_ci NOT NULL COMMENT '추가 입력 사항',
+  `userChoogaId` varchar(16) COLLATE utf8mb4_general_ci NOT NULL COMMENT '추천인 아이디',
+  `userChoogaEvent` varchar(100) COLLATE utf8mb4_general_ci NOT NULL COMMENT '참여 이벤트 명',
+  `userService` varchar(1000) COLLATE utf8mb4_general_ci NOT NULL COMMENT '이용 약관 동의',
+  `userGaibDate` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '가입일'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci COMMENT='마켓컬리 회원가입 테이블';
+
+
+데이터베이스 권한
+
+데이터베이스서버
+데이터베이스사용자이름
+데이터베이스사용자비밀번호
+데이터베이스이름
+
+$db_server='localhost';
+$db_user_name='sjm6715';
+$db_user_pw='';
+$db_name='sjm6715';
+
+더미데이터
+임의의 테스트용 데이터 저장하기
+INSERT INTO 테이블이름() VALUES()

@@ -1,0 +1,34 @@
+.sub {
+    width:100%;
+    background: #fff;
+    #section1 {
+        width:100%;
+        .container {
+            width: 1050px; 
+            margin: 0 auto;
+            .content {
+                width:100%;
+                .banner-wrap {
+                    width:100%;
+                    li {
+                        width:100%;
+                        .gap {
+                            width:100%;
+                            padding: 0 0 10px 0;
+                            .img-box {
+                                width:100%;
+                                a {
+                                    width:100%;
+                                    display: block;
+                                    img {
+                                        width:100%;
+                                    }    
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

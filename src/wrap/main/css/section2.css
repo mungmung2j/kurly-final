@@ -1,0 +1,22 @@
+#section2 .container .content .slide-container .slide-view .slide-wrap {
+  width: 1068px;
+}
+#section2 .container .content .slide-container .slide-view .slide-wrap .slide {
+  width: 356px;
+}
+#section2 .container .content .slide-container .slide-view .slide-wrap .slide .gap h2 {
+  font-size: 28px;
+  color: #111;
+  font-weight: 500;
+  line-height: 130%;
+}
+#section2 .container .content .slide-container .slide-view .slide-wrap .slide .gap h3 {
+  font-size: 16px;
+  color: #333;
+  font-weight: 500;
+  padding: 15px 0 25px 0;
+}
+#section2 .container .content .slide-container .slide-view .slide-wrap .slide .gap h4 {
+  font-size: 14px;
+  color: #999;
+}

@@ -1,0 +1,121 @@
+.intro-slide20 {
+    padding: 80px 0 0 0;
+    width: 100%;
+    .container {
+        width: 100%;
+        max-width: 1050px;
+        margin: 0 auto;
+        .title {
+            width: 100%;
+            padding: 0 0 30px 0;
+            text-align: center;
+            h2 {                
+                font-size: 24px;
+                font-weight: 600;
+                color: #333;
+                padding: 0 0 15px 0;
+            }
+            h3 {
+                font-size: 16px;
+                font-weight: 500;
+                color: #333;
+            }
+        }
+        .content {
+            width: 100%;
+            .slide-container {
+                position: relative;
+                width: 100%;
+                .slide-view {
+                    z-index: 1;
+                    position: relative;
+                    width: 100%;
+                    overflow: hidden;
+                    .slide-wrap {
+                        width: 267px * 20;
+                        display: flex;
+                        .slide {
+                            width: 267px;
+                            .gap {
+                                margin: 0 18px 0 0;
+                                .img-box{
+                                    width: 100%;    
+                                    overflow: hidden;
+                                    img {
+                                        width: 100%;
+                                        transition: all 0.3s;
+                                        &:hover {
+                                            transform: scale(1.05);
+                                        }
+                                    }
+                                }
+                                .txt-box{
+                                    padding: 10px 0 0 0;
+                                    width: 100%;
+                                    line-height: 170%;
+                                    a {
+                                        display: block;
+                                        width: 100%;
+                                        height: 36px;
+                                        border: 1px solid #ccc;
+                                        line-height: 36px;
+                                        text-align: center;
+                                        color:#666;
+                                        img {width:22px;height: 22px;margin: 0 3px 0 0;}
+                                    }
+                                    h3 {
+                                        padding: 10px 0;
+                                        font-weight: 500;
+                                        font-size: 16px;                                        
+                                        
+                                    }
+                                    h4 {                                        
+                                        font-size: 16px; 
+                                        color:#999;
+                                        text-decoration: line-through;    // 취소선    
+                                    }
+                                    h5 {
+                                        font-size: 16px;         
+                                        font-weight: 600;
+                                        strong {color:#f00;}
+                                        em {color:#333;margin: 0 0 0 10px}
+                                    }
+                                    h6 {
+                                        font-size: 12px;                                        
+                                        img {width:15px;height: 15px;margin: 0 3px 0 0;}
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .next-arrow-btn {
+                    z-index: 2;
+                    position: absolute;
+                    top: 130px;
+                    right: -30px;
+                    width: 60px;
+                    height: 60px;
+                    background: url(../../../../public/img/intro/section2/icon_arrow_bg_white_black.svg) no-repeat 50% 50%;
+                    transform: rotate(180deg);
+                    &:hover {
+                        background-image: url(../../../../public/img/intro/section2/icon_arrow_bg_white_purple.svg);
+                    }
+                }
+                .prev-arrow-btn {
+                    z-index: 2;
+                    position: absolute;
+                    top: 130px;
+                    left: -30px;
+                    width: 60px;
+                    height: 60px;
+                    background: url(../../../../public/img/intro/section2/icon_arrow_bg_white_black.svg) no-repeat 50% 50%;
+                    &:hover {
+                        background-image: url(../../../../public/img/intro/section2/icon_arrow_bg_white_purple.svg);
+                    }
+                }
+            }
+        }
+    }
+}

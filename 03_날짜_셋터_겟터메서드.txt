@@ -1,0 +1,76 @@
+import React from "react";
+import './scss/TopModal.scss';
+
+export default function TopModalComponent(){
+
+    // 탑모달 버튼 클릭이벤트
+    const onClickTopModalClose=(e)=>{
+        e.preventDefault();
+        // 현재날짜시간
+        let toDay = new Date();
+        // 년
+        // 월
+        // 일
+        // 시
+        // 분
+        // 게터메서드() 가져오기
+        let year =  toDay.getFullYear();
+        let month =  toDay.getMonth();
+        let date =  toDay.getDate();
+        let hour =  toDay.getHours();
+        let minute =  toDay.getMinutes();
+        let second =  toDay.getSeconds();
+
+        console.log(year );
+        console.log(month+1 );
+        console.log(date );
+        console.log(hour );
+        console.log(minute );
+        console.log(second );
+        // 세터메서드() 설정하기
+        // 3년 더하기
+        toDay.setFullYear( toDay.getFullYear()+3 );
+        year =  toDay.getFullYear();
+        console.log( year );
+
+        // 3개월 더하기
+        toDay.setMonth( toDay.getMonth()+3 );
+        month =  toDay.getMonth();
+        console.log( month );
+
+        // 3일 더하기
+        toDay.setDate( toDay.getDate()+3 );
+        date =  toDay.getDate();
+        console.log( date );
+        
+        // 3시간 더하기
+        toDay.setHours( toDay.getHours()+3 );
+        hour =  toDay.getHours();
+        console.log( hour );
+
+        // 3분 더하기
+        toDay.setMinutes( toDay.getMinutes()+3 );
+        minute =  toDay.getMinutes();
+        console.log( minute );
+
+        // 30초 더하기
+        toDay.setSeconds( toDay.getSeconds()+30 );
+        second =  toDay.getSeconds();
+        console.log( second );
+
+        
+
+    }
+
+    return(
+        <div id="topModal">
+            <div className="container">
+                <div className="content">
+                    <a href="https://www.kurly.com/shop/event/kurlyEventV2.php?lego=event/2023/0911/join/coupon"><span>지금 가입하고, </span><strong>1만원 할인 쿠폰</strong><span> 받아가세요!</span></a>
+                    <button onClick={onClickTopModalClose}><img src="./img/top_modal/close.svg" alt="" /></button>
+                </div>
+            </div>
+        </div>
+    )
+}
+

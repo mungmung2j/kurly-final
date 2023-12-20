@@ -1,0 +1,46 @@
+MVC Model(패턴)
+M: Model(자료 => TXT, CSV, XML,JSON, DataBase(MySQL, Oracle, MS-SQL)) 
+V: View(뷰 탬플릿 바인딩이 이루어지는 태그요소들 & JS) JSP, PHP, ASP, React, View
+C: Control(JS, 프로그래밍 코딩 반복문 조건문 AJAX, AXIOS, FETCH ...)
+
+
+백앤드(DB) PHP, MYSQL, Node.js <= REST API[CRUD](JSON 형식 데이터, XML, CSV, TXT) => 프론트앤드(Javascript) React
+표준데이터 => JSON 형식 데이터 
+intro[폴더]
+    section1.json
+    section2.json
+    section3.json
+    section4.json
+    section5.json
+    section6.json
+    section7.json
+    section8.json
+
+sub_page[폴더]
+    sub1.json
+    sub2.json
+    sub3.json
+    sub4.json
+
+Section1Component  
+: 메인슬라이드
+속성: 번호, 이미지, URL
+
+
+Section2Component  
+: 제품
+
+속성[필드(Field)]
+
+제품코드(타입 문자형[String])
+    - 분류코드 : 코드 + 번호 
+    - 인트로페이지 INTRO_S02_00001, 
+    - 서브페이지 SUB_01_00001  SUB_02_00001 SUB_03_00001 SUB_04_00001
+
+제품이미지(타입 문자형[String]), 
+제품명(타입 문자형[String]), 
+정가(타입 숫자형[정수 Integer]), 
+할인율(타입 숫자형[실수 Float 또는 Double]),
+리뷰(타입 문자형[String])
+
+
