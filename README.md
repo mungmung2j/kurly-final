@@ -1,25 +1,19 @@
-# Getting Started with Create React App
+배포주소 : 닷홈 "https://sjm6715.com/kurly_week_11/"
+          넷트리파이 "https://kurly-ssl-browserrouter.netlify.app/"
 
 ## 넷트리파이 배포
 ssl 인증서
 netlify.toml
-https://kurly-ssl-browserrouter.netlify.app/
 
-
-package.json
-:
-:
-    },
-  "homepage": "https://sjm6715.com/kurly_week_11/"
-}
-
-### 닷홈 배포
+## 닷홈 배포
 -npm run build
 build 폴더 내부 모든 파일 닷홈 배포 폴더 안에 업로드
 
 닷홈배포는
 HashRouter = basename={process.env.PUBLIC_URL} 삭제한다.
 <HashRouter>
+
+# Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
