@@ -1,0 +1,65 @@
+#signIn{
+    width: 100%;
+    margin-top: 90px;
+    margin-bottom: 60px;
+    form{
+        margin: 0 auto;
+        width: 340px;
+        h2{
+            font-weight: 800;
+            font-size: 20px;
+            line-height: 20px;
+            text-align: center;
+        }
+        .input-box{
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            input[type='text'],
+            input[type='password']{
+                width: 100%;
+                height: 54px;
+                font-size: 14px;
+                padding: 0 11px 1px 15px;
+                border-radius: 4px;
+                border: 1px solid rgb(221, 221, 221);
+                font-weight: 400;
+                color: rgb(51, 51, 51);
+                outline: none;
+            }
+        }
+        .find-box{
+            margin-top:10px;
+            font-size: 13px;
+            display: flex;
+            justify-content: flex-end;
+            a{
+                text-decoration: none;
+                color: rgb(51, 51, 51);
+            }
+            span{}
+        }
+        .btn-box{
+            margin-top:28px;
+            display: flex;
+            flex-direction: column;
+            gap:10px;
+            button{
+                height: 54px;
+                background-color: rgb(90, 0, 128);
+                color: #fff;
+                border-radius: 3px;
+                border: none;
+                font-size: 16px;
+                font-weight: 500;
+                cursor: pointer;
+                &:nth-child(2){
+                    border: 1px solid rgb(95, 0, 128);
+                    background-color: #fff;
+                    color: rgb(95, 0, 128);
+                }
+            }
+        }
+    }
+}

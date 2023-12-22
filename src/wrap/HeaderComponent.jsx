@@ -11,6 +11,7 @@ export default function HeaderComponent(){
 
     const [istooltipAddress, setIstooltipAddress] = React.useState(false);
     const [header, setHeader] = React.useState(false);
+    const [iscategoryMenu, setIsCategoryMenu] = React.useState(false);
 
     React.useEffect(()=>{
         window.addEventListener('scroll', function(){
@@ -31,7 +32,7 @@ export default function HeaderComponent(){
         dispatch(setIsDaumPostCode(true));
     }
 
-    // 툴팁메유 보임
+    // 툴팁메뉴 보임
     const onMouseEnterAddress=()=>{
         setIstooltipAddress(true);
     }
@@ -44,8 +45,18 @@ export default function HeaderComponent(){
     //배송지 변경
     const onClickAddressSetup=(e)=>{
         e.preventDefault();
-        dispatch(setIsDaumPostCode(true));    }
+        dispatch(setIsDaumPostCode(true));
+    }
 
+    //카테고리메뉴 보임
+    const onMouseEnterCategory=()=>{
+        setIsCategoryMenu(true);
+    }
+
+    //카테고리메뉴 숨김
+    const onMouseLeaveCategory=()=>{
+        setIsCategoryMenu(false);
+    }
     return(
         <>
             <header id="header">
@@ -117,7 +128,126 @@ export default function HeaderComponent(){
                     <div className="container">
                         <div className="content">
                             <div className={`left${header?' on':''}`}>
-                                <a href="!#">
+                                <a href="!#" onMouseEnter={onMouseEnterCategory}>
+                                    {iscategoryMenu &&
+                                        (<div className="category" onMouseLeave={onMouseLeaveCategory}>
+                                            <ul>
+                                                <li>
+                                                    <span></span>
+                                                    <span>홀리데이 파티</span>
+                                                    <img src="./img/header/icon_new.svg" alt="" />
+                                                    <ul>
+                                                        <li>Best</li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <span></span>
+                                                    <span>홀리데이 인기 선물</span>
+                                                    <img src="./img/header/icon_new.svg" alt="" />
+                                                </li>
+                                                <li>
+                                                    <span></span>
+                                                    <span>채소</span>
+                                                </li>
+                                                <li>
+                                                    <span></span>
+                                                    <span>과일·견과·쌀</span>
+                                                </li>
+                                                <li>
+                                                    <span></span>
+                                                    <span>수산·해물·건어물</span>
+                                                </li>
+                                                <li>
+                                                    <span></span>
+                                                    <span>정육·가공육·계란</span>
+                                                </li>
+                                                <li>
+                                                    <span></span>
+                                                    <span>국·반찬·메인요리</span>
+                                                </li>
+                                                <li>
+                                                    <span></span>
+                                                    <span>간편식·밀키트·샐러드</span>
+                                                </li>
+                                                <li>
+                                                    <span></span>
+                                                    <span>면·양념·오일</span>
+                                                </li>
+                                                <li>
+                                                    <span></span>
+                                                    <span>생수·음료·커피</span>
+                                                </li>
+                                                <li>
+                                                    <span></span>
+                                                    <span>간식·과자·떡</span>
+                                                </li>
+                                                <li>
+                                                    <span></span>
+                                                    <span>베이커리</span>
+                                                </li>
+                                                <li>
+                                                    <span></span>
+                                                    <span>유제품</span>
+                                                </li>
+                                                <li>
+                                                    <span></span>
+                                                    <span>건강식품</span>
+                                                </li>
+                                                <li>
+                                                    <span></span>
+                                                    <span>와인·위스키</span>
+                                                </li>
+                                                <li>
+                                                    <span></span>
+                                                    <span>전통주</span>
+                                                </li>
+                                                <li>
+                                                    <span></span>
+                                                    <span>주방용품</span>
+                                                </li>
+                                                <li>
+                                                    <span></span>
+                                                    <span>생활용품·리빙</span>
+                                                </li>
+                                                <li>
+                                                    <span></span>
+                                                    <span>가전제품</span>
+                                                </li>
+                                                <li>
+                                                    <span></span>
+                                                    <span>가구·인테리어</span>
+                                                </li>
+                                                <li>
+                                                    <span></span>
+                                                    <span>유아동</span>
+                                                </li>
+                                                <li>
+                                                    <span></span>
+                                                    <span>스포츠·레져·캠핑</span>
+                                                </li>
+                                                <li>
+                                                    <span></span>
+                                                    <span>반려동물</span>
+                                                </li>
+                                                <li>
+                                                    <span></span>
+                                                    <span>럭셔리뷰티</span>
+                                                </li>
+                                                <li>
+                                                    <span></span>
+                                                    <span>스킨케어·메이크업</span>
+                                                </li>
+                                                <li>
+                                                    <span></span>
+                                                    <span>헤어·바디·구강</span>
+                                                </li>
+                                                <li>
+                                                    <span></span>
+                                                    <span>컬리의 추천</span>
+                                                </li>
+                                            </ul>
+                                        </div>)
+                                    }
                                     <span></span>
                                     <strong>카테고리</strong>
                                 </a>

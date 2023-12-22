@@ -59,9 +59,7 @@
                             font-size: 18px;
                             font-weight: 600;
                             color:#bbb;
-                            &:hover {
-                                color:#5f0080;
-                            }
+                            
                             span {
                                display: inline-block;
                                width:82px; 
@@ -286,22 +284,42 @@
                             display: flex;
                             height: 100%;   
                             align-items: center;                         
-                            span {
+                            >span {
                                 width:16px;
                                 height: 14px;
                                 background: url(../../../public/img/header/icon_3bar.svg) no-repeat 50% 50%;
                                 background-size: 16px 14px;
                             }
                             &:hover {
-                                span { 
-                                    background-image: url(../../../public/img/header/icon_3bar_on.svg);
+                                >span { 
+                                    background-image: url(../../../public/img/header/icon_3bar_on.svg) no-repeat 50% 50%;
+                                    ~ strong {
+                                        color: #5f0080;
+                                    }
                                 }
                             }
                             strong {
                                 font-size: 16px;
                                 font-weight: 600;
                                 color:#333;
-                                margin-left: 10px;
+                                margin-left: 10px;                              
+                            }
+                            >div{
+                                display: flex;
+                                position: fixed;
+                                color: #333;
+                                padding-top: 10px;
+                                top:0;
+                                ul{
+                                    width: 247px;
+                                    height: 100%;
+                                    li{
+                                        padding: 7px 0px 9px 14px;
+                                        span{
+                                            
+                                        }
+                                    }
+                                }
                             }
                         }
                     }
