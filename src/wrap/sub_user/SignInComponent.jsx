@@ -4,6 +4,7 @@ import axios from "axios";
 import { confirm } from "../../reducer/confirm_reducer";
 import { useDispatch } from "react-redux";
 import { useState } from "react";
+import { Link, Outlet } from "react-router-dom";
 
 export default function SignInComponent(){
     const [state, setState]=React.useState({
@@ -53,6 +54,7 @@ export default function SignInComponent(){
 
 
     return(
+    <>
         <main id="signIn">
             <form>
                 <h2>로그인</h2>
@@ -76,9 +78,11 @@ export default function SignInComponent(){
                 </div>
                 <div className="btn-box">
                     <button onClick={onClickSignIn}>로그인</button>
-                    <button>회원가입</button>
+                    <Link to="/signup" className="signup-btn">회원가입</Link>
                 </div>
             </form>
         </main>
+        <Outlet />
+    </>
     )
 }
