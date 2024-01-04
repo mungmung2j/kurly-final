@@ -93,12 +93,12 @@ export default function Sub2Component({viewProductSetter}){
                             <div className="header">
                                 <h3>총 255건</h3>
                                 <span>
-                                    <a href="!#"><em>추천순</em> <img src="./img/sub/icon_qustion.svg" alt="" /></a>
-                                    <a href="!#" className="on">신상품순</a>
-                                    <a href="!#">판매량순</a>
-                                    <a href="!#">혜택순</a>
-                                    <a href="!#">낮은 가격순</a>
-                                    <a href="!#">높은 가격순</a>
+                                    <a href="#"><em>추천순</em> <img src="./img/sub/icon_qustion.svg" alt="" /></a>
+                                    <a href="#" className="on">신상품순</a>
+                                    <a href="#">판매량순</a>
+                                    <a href="#">혜택순</a>
+                                    <a href="#">낮은 가격순</a>
+                                    <a href="#">높은 가격순</a>
                                 </span>
                             </div>
                             <div className="product-box">

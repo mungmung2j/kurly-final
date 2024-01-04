@@ -168,7 +168,7 @@ export default function DaumPostcodeComponent() {
                                     </h4>
                                     <div>
                                         <p>관공서 / 학교 / 병원 / 시장 / 공단지역 / 산간지역 / 백화점 등</p>
-                                        <a href="!#">
+                                        <a href="#">
                                             <span>자세히보기</span> 
                                             <img src="./img/daum_postcode/ico_arrow_down_11x10.svg" alt="" />
                                         </a>

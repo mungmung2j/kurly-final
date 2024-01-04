@@ -133,7 +133,7 @@ export default function Section1Component(){
                                 if(idx===(state.n-1)){   // 마지막슬라이드 인덱스 18
                                     return(
                                         <li key={0} className={`slide slide${item.번호}`}>
-                                            <a href="!#"><img src={`./img/intro/section1/${item.이미지}`} alt="" /></a>
+                                            <a href="#"><img src={`./img/intro/section1/${item.이미지}`} alt="" /></a>
                                         </li>
                                     )
                                 }
@@ -143,7 +143,7 @@ export default function Section1Component(){
                             state.메인슬라이드.map((item,idx)=>{
                                 return(
                                     <li key={item.번호} className={`slide slide${item.번호}`}>
-                                        <a href="!#"><img src={`./img/intro/section1/${item.이미지}`} alt="" /></a>
+                                        <a href="#"><img src={`./img/intro/section1/${item.이미지}`} alt="" /></a>
                                     </li>
                                 )
                             })   
@@ -153,7 +153,7 @@ export default function Section1Component(){
                                 if(idx===0){ // 첫번째 슬라이드
                                     return(
                                         <li key={item.번호+1} className={`slide slide${item.번호}`}>
-                                            <a href="!#"><img src={`./img/intro/section1/${item.이미지}`} alt="" /></a>
+                                            <a href="#"><img src={`./img/intro/section1/${item.이미지}`} alt="" /></a>
                                         </li>
                                     )
                                 }
@@ -161,8 +161,8 @@ export default function Section1Component(){
                         }
                     </ul>
                 </div>
-                <a href="!#" onClick={onClickNextArrowBtn} className={`next-arrow-btn${isArrow?' on':''}`}><img src="./img/intro/section1/icon_arrow_bg_gray.svg" alt="" /></a>
-                <a href="!#" onClick={onClickPrevArrowBtn} className={`prev-arrow-btn${isArrow?' on':''}`}><img src="./img/intro/section1/icon_arrow_bg_gray.svg" alt="" /></a>
+                <a href="#" onClick={onClickNextArrowBtn} className={`next-arrow-btn${isArrow?' on':''}`}><img src="./img/intro/section1/icon_arrow_bg_gray.svg" alt="" /></a>
+                <a href="#" onClick={onClickPrevArrowBtn} className={`prev-arrow-btn${isArrow?' on':''}`}><img src="./img/intro/section1/icon_arrow_bg_gray.svg" alt="" /></a>
                 <span className="page-number-box"><strong>{(cnt+1) > state.n ? 1 : (cnt+1)}</strong><i>/</i><em>{state.n}</em> </span>
             </div>
             

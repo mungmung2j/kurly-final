@@ -68,7 +68,7 @@ export default function HeaderComponent(){
                                 <i>|</i>                            
                                 <Link to="/signin">로그인</Link>
                                 <i>|</i>
-                                <Link to="/notice">고객센터</Link>
+                                <a href="#">고객센터</a>
                             </aside>
                         </div>
                     </div>
@@ -77,14 +77,14 @@ export default function HeaderComponent(){
                     <div className="container">
                         <div className="content">
                             <div className="left">
-                                <Link to="/"><span></span><strong>마켓컬리</strong></Link><i>|</i><a href="!#">뷰티컬리</a>
+                                <Link to="/"><span></span><strong>마켓컬리</strong></Link><i>|</i><a href="#">뷰티컬리</a>
                             </div>
                             <div className={`center${header?' on':''}`}>
                                 <input className={header?'on':''} type="text" name="search" id="search" placeholder="검색어를 입력해 주세요" />
                                 <button className={header?'on':''}></button>
                             </div>
                             <div className={`right${header?' on':''}`}>
-                                <a href="!#"  onMouseEnter={onMouseEnterAddress} >
+                                <a href="#"  onMouseEnter={onMouseEnterAddress} >
                                     <img src="./img/header/icon_map_off.svg" alt=""/>
                                 {
                                     istooltipAddress && (
@@ -118,8 +118,8 @@ export default function HeaderComponent(){
                                     )
                                 }
                                 </a>
-                                <a href="!#"><img src="./img/header/icon_heart_off.svg" alt="" /></a>
-                                <a href="!#"><img src="./img/header/icon_cart_off.svg" alt="" /></a>
+                                <a href="#"><img src="./img/header/icon_heart_off.svg" alt="" /></a>
+                                <a href="#"><img src="./img/header/icon_cart_off.svg" alt="" /></a>
                             </div>
                         </div>
                     </div>
@@ -128,7 +128,7 @@ export default function HeaderComponent(){
                     <div className="container">
                         <div className="content">
                             <div className={`left${header?' on':''}`}>
-                                <a href="!#" onMouseEnter={onMouseEnterCategory}>
+                                <a href="#" onMouseEnter={onMouseEnterCategory}>
                                     {iscategoryMenu &&
                                         (<div className="category" onMouseLeave={onMouseLeaveCategory}>
                                             <ul>
@@ -261,7 +261,7 @@ export default function HeaderComponent(){
                                 </nav>
                             </div>
                             <div className={`right${header?' on':''}`}>
-                                <a href="!#"><em>샛별・택배</em> <span>배송안내</span></a>
+                                <a href="#"><em>샛별・택배</em> <span>배송안내</span></a>
                             </div>
                         </div>
                     </div>

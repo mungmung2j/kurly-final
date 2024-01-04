@@ -54,7 +54,7 @@ export default function Container({viewProductSetter,캡션1, 캡션2, product,s
     return (
         <div className="container">
             <div className="title">
-                <h2><a href="!#">{캡션1}</a></h2>
+                <h2><a href="#">{캡션1}</a></h2>
                 <h3>{캡션2}</h3>
             </div>
             <div className="content">
@@ -68,7 +68,7 @@ export default function Container({viewProductSetter,캡션1, 캡션2, product,s
                                             <div className="gap"  onClick={(e)=>onClickViewProduct(e, item, `./img/intro/${subject}/`)} >
                                                 <div className="img-box"><img src={`./img/intro/${subject}/${item.제품이미지}`} alt="" /></div>
                                                 <div className="txt-box">
-                                                    <a href="!#"><img src={`./img/intro/${subject}/icon_cart_black.svg`} alt="" />담기</a>
+                                                    <a href="#"><img src={`./img/intro/${subject}/icon_cart_black.svg`} alt="" />담기</a>
                                                     <h3>{item.제품명}</h3>
                                                     <h4>{item.정가}원</h4>
                                                     <h5><strong>20%</strong> <em>{item.정가*(1-item.할인율)}원</em></h5>
@@ -82,8 +82,8 @@ export default function Container({viewProductSetter,캡션1, 캡션2, product,s
                         </ul>
                     </div>
 
-                    <a href="!#" onClick={onClickNextArrowBtn} className="next-arrow-btn blind">next-arrow-btn</a>
-                    <a href="!#" onClick={onClickPrevArrowBtn} className="prev-arrow-btn blind">prev-arrow-btn</a>
+                    <a href="#" onClick={onClickNextArrowBtn} className="next-arrow-btn blind">next-arrow-btn</a>
+                    <a href="#" onClick={onClickPrevArrowBtn} className="prev-arrow-btn blind">prev-arrow-btn</a>
 
                 </div>
             </div>

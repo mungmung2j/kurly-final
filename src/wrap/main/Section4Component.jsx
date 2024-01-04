@@ -27,7 +27,7 @@ export default function Section4Component(){
         <section id="section4">
             <div className="container">
                 <div className="content">
-                    <a href="!#"><img src={`./img/intro/section4/${img}`} alt="" /></a>
+                    <a href="#"><img src={`./img/intro/section4/${img}`} alt="" /></a>
                 </div>
             </div>
         </section>

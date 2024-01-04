@@ -67,7 +67,7 @@ export default function Section2Component({viewProductSetter}){
                                                 <div className="gap" onClick={(e)=>onClickViewProduct(e, item, './img/intro/section2/')}>
                                                     <div className="img-box"><img src={`./img/intro/section2/${item.제품이미지}`} alt="" /></div>
                                                     <div className="txt-box">
-                                                        <a href="!#"><img src="./img/intro/section5/icon_cart_black.svg" alt="" />담기</a>
+                                                        <a href="#"><img src="./img/intro/section5/icon_cart_black.svg" alt="" />담기</a>
                                                         <h3>{item.제품명}</h3>
                                                         <h4>{item.정가}원</h4>
                                                         <h5><strong>{item.할인율*100}%</strong> <em>{item.정가*(1-item.할인율)}원</em></h5>

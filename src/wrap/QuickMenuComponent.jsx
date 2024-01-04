@@ -72,19 +72,19 @@ export default function QuickMenuComponent({product}){
             <div className="container">
 
                 <div className="top">
-                    <a href="!#"><img src="./img/intro/deliveryInfo.png" alt="" /></a> 
+                    <a href="#"><img src="./img/intro/deliveryInfo.png" alt="" /></a> 
                 </div>
 
                 <div className="center">
-                    <a href="!#">등급별 혜택</a>
-                    <a href="!#">레시피</a>
+                    <a href="#">등급별 혜택</a>
+                    <a href="#">레시피</a>
                 </div>
 
                 {
                     viewProduct  &&  (
                         <div className="bottom">
                             <div className="up">
-                                <a href="!#" onClick={onClickPrev}><img src="./img/quick_menu/icon_up.svg" alt="" /></a> 
+                                <a href="#" onClick={onClickPrev}><img src="./img/quick_menu/icon_up.svg" alt="" /></a> 
                                 <h2>최근본상품</h2>
                             </div>
                             <div className="list">
@@ -93,7 +93,7 @@ export default function QuickMenuComponent({product}){
                                         product.map((item, idx)=>{
                                             return(
                                                 <li key={idx}>
-                                                    <a href="!#">
+                                                    <a href="#">
                                                         <img src={item.제품이미지} alt="" />
                                                     </a>
                                                 </li> 
@@ -104,7 +104,7 @@ export default function QuickMenuComponent({product}){
                                 </ul>
                             </div>
                             <div className="down">
-                            <a href="!#"  onClick={onClickNext}><img src="./img/quick_menu/icon_up.svg" alt="" /></a> 
+                            <a href="#"  onClick={onClickNext}><img src="./img/quick_menu/icon_up.svg" alt="" /></a> 
                             </div>
                         </div>
                     )
