@@ -1,0 +1,10 @@
+{
+    "category":[
+        {"id":0, "name":"채소", "img":"category0.webp"},
+        {"id":1, "name":"과일·견과·쌀", "img":"category1.webp"}
+    ],
+    "colcategory":[
+        {"id":0, "name":"채소", "img":"colcategory0.webp"},
+        {"id":1, "name":"과일·견과·쌀", "img":"colcategory1.webp"}
+    ]
+}

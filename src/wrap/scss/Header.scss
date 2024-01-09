@@ -283,7 +283,8 @@
                         a {
                             display: flex;
                             height: 100%;   
-                            align-items: center;                         
+                            align-items: center;  
+                            position: relative;                       
                             >span {
                                 width:16px;
                                 height: 14px;
@@ -306,17 +307,32 @@
                             }
                             >div{
                                 display: flex;
-                                position: fixed;
+                                position: absolute;
                                 color: #333;
-                                padding-top: 10px;
+                                padding-top: 56px;
                                 top:0;
                                 ul{
                                     width: 247px;
                                     height: 100%;
+                                    overflow: auto;
+                                    max-height: calc(95vh - 55px);
+                                    border: 1px solid rgb(221, 221, 221);
+                                    background-color: #fff;
                                     li{
                                         padding: 7px 0px 9px 14px;
+                                        img{
+                                            width: 24px;
+                                            height: 24px;
+                                        }
                                         span{
-                                            
+                                            padding: 1px 20px 0 10px;
+                                            font-size: 14px;
+                                            font-weight: 400;
+                                            line-height: 22px;
+                                            &:hover{
+                                                color: #5f0080;
+                                                font-weight: 500;
+                                            }
                                         }
                                     }
                                 }
