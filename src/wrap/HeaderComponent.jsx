@@ -13,11 +13,9 @@ export default function HeaderComponent(){
     const [istooltipAddress, setIstooltipAddress] = React.useState(false);
     const [header, setHeader] = React.useState(false);
     const [iscategoryMenu, setIsCategoryMenu] = React.useState(false);
-    const [iscat0, setIsCat0] = React.useState(false);
-    const [iscat1, setIsCat1] = React.useState(false);
+    const [isCat, setIsCat] = React.useState(Array(25).fill(false));
     const [state, setState] = React.useState({
-        카테고리:[],
-        컬러카테고리:[]
+        카테고리:[]
     });
 
     React.useEffect(()=>{
@@ -41,8 +39,7 @@ export default function HeaderComponent(){
         .then((res)=>{
             if(res.status===200){
                 setState({
-                    카테고리:res.data.category,
-                    컬러카테고리:res.data.colcategory
+                    카테고리:res.data.category
                 })
             }
         })
@@ -61,7 +58,7 @@ export default function HeaderComponent(){
         setIstooltipAddress(true);
     }
 
-    // 툴팁메유 숨김
+    // 툴팁메뉴 숨김
     const onMouseLeaveAddress=()=>{
         setIstooltipAddress(false);
     }
@@ -82,20 +79,17 @@ export default function HeaderComponent(){
         setIsCategoryMenu(false);
     }
 
-    const onMouseEnterCat0=()=>{
-        setIsCat0(true)
+    const onMouseEnterCat=(index)=>{
+        const newIsCat = Array(25).fill(false);
+        newIsCat[index] = true;
+        setIsCat(newIsCat);
     }
 
-    const onMouseLeaveCat0=()=>{
-        setIsCat0(false)
+    const onMouseLeaveCat=()=>{
+        const newIsCat = Array(25).fill(false);
+        setIsCat(newIsCat);
     }
-    const onMouseEnterCat1=()=>{
-        setIsCat1(true)
-    }
-
-    const onMouseLeaveCat1=()=>{
-        setIsCat1(false)
-    }
+    
     return(
         <>
             <header id="header">
@@ -173,112 +167,21 @@ export default function HeaderComponent(){
                                     {iscategoryMenu &&
                                         (<div className="category" onMouseLeave={onMouseLeaveCategory}>
                                             <ul>
-                                                <li onMouseEnter={onMouseEnterCat0} onMouseLeave={onMouseLeaveCat0}>
-                                                    {iscat0 ?
-                                                        (<img src={`./img/header/${state.컬러카테고리[0].img}`} alt="" />)
-                                                        :(<img src={`./img/header/${state.카테고리[0].img}`} alt=""/>)                                                    
-                                                    }
-                                                    <span>{state.카테고리[0].name}</span>
-                                                </li>
-                                                <li onMouseEnter={onMouseEnterCat1} onMouseLeave={onMouseLeaveCat1}>
-                                                    {iscat1 ?
-                                                        (<img src={`./img/header/${state.컬러카테고리[1].img}`} alt="" />)
-                                                        :(<img src={`./img/header/${state.카테고리[1].img}`} alt=""/>)                                                    
-                                                    }
-                                                    <span>{state.카테고리[1].name}</span>
-                                                </li>
-                                                <li>
-                                                    <img src="./img/header/category2.webp" alt="" />
-                                                    <span>수산·해물·건어물</span>
-                                                </li>
-                                                <li>
-                                                    <img src="./img/header/category3.webp" alt="" />
-                                                    <span>정육·가공육·계란</span>
-                                                </li>
-                                                <li>
-                                                    <img src="./img/header/category4.webp" alt="" />
-                                                    <span>국·반찬·메인요리</span>
-                                                </li>
-                                                <li>
-                                                    <img src="./img/header/category5.webp" alt="" />
-                                                    <span>간편식·밀키트·샐러드</span>
-                                                </li>
-                                                <li>
-                                                    <img src="./img/header/category6.webp" alt="" />
-                                                    <span>면·양념·오일</span>
-                                                </li>
-                                                <li>
-                                                    <img src="./img/header/category7.webp" alt="" />
-                                                    <span>생수·음료·커피</span>
-                                                </li>
-                                                <li>
-                                                    <img src="./img/header/category8.webp" alt="" />
-                                                    <span>간식·과자·떡</span>
-                                                </li>
-                                                <li>
-                                                    <img src="./img/header/category9.webp" alt="" />
-                                                    <span>베이커리</span>
-                                                </li>
-                                                <li>
-                                                    <img src="./img/header/category10.webp" alt="" />
-                                                    <span>유제품</span>
-                                                </li>
-                                                <li>
-                                                    <img src="./img/header/category11.webp" alt="" />
-                                                    <span>건강식품</span>
-                                                </li>
-                                                <li>
-                                                    <img src="./img/header/category12.webp" alt="" />
-                                                    <span>와인·위스키</span>
-                                                </li>
-                                                <li>
-                                                    <img src="./img/header/category13.webp" alt="" />
-                                                    <span>전통주</span>
-                                                </li>
-                                                <li>
-                                                    <img src="./img/header/category14.webp" alt="" />
-                                                    <span>주방용품</span>
-                                                </li>
-                                                <li>
-                                                    <img src="./img/header/category15.webp" alt="" />
-                                                    <span>생활용품·리빙</span>
-                                                </li>
-                                                <li>
-                                                    <img src="./img/header/category16.webp" alt="" />
-                                                    <span>가전제품</span>
-                                                </li>
-                                                <li>
-                                                    <img src="./img/header/category17.webp" alt="" />
-                                                    <span>가구·인테리어</span>
-                                                </li>
-                                                <li>
-                                                    <img src="./img/header/category18.webp" alt="" />
-                                                    <span>유아동</span>
-                                                </li>
-                                                <li>
-                                                    <img src="./img/header/category19.webp" alt="" />
-                                                    <span>스포츠·레져·캠핑</span>
-                                                </li>
-                                                <li>
-                                                    <img src="./img/header/category20.webp" alt="" />
-                                                    <span>반려동물</span>
-                                                </li>
-                                                <li>
-                                                    <img src="./img/header/category21.webp" alt="" />
-                                                    <span>럭셔리뷰티</span>
-                                                </li>
-                                                <li>
-                                                    <img src="./img/header/category22.webp" alt="" />
-                                                    <span>스킨케어·메이크업</span>
-                                                </li>
-                                                <li>
-                                                    <img src="./img/header/category23.webp" alt="" />
-                                                    <span>헤어·바디·구강</span>
-                                                </li>
-                                                <li>
-                                                    <img src="./img/header/category24.webp" alt="" />
-                                                    <span>컬리의 추천</span>
-                                                </li>
+                                                {
+                                                    state.카테고리.map((categoryData, index)=>{
+                                                        return(
+                                                        <li key={index} onMouseEnter={()=>onMouseEnterCat(index)} onMouseLeave={()=>onMouseLeaveCat(index)}>
+                                                            {isCat[index] ?
+                                                                (<img src={`./img/header/${categoryData.col}`} alt="" />)
+                                                                :(<img src={`./img/header/${categoryData.img}`} alt=""/>)                                                    
+                                                            }
+                                                            <span>{categoryData.name}</span>
+                                                        </li>
+                                                        );
+                                                    })
+                                                }
+                                                
+
                                             </ul>
                                         </div>)
                                     }

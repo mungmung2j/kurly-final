@@ -1,10 +1,29 @@
 {
     "category":[
-        {"id":0, "name":"채소", "img":"category0.webp"},
-        {"id":1, "name":"과일·견과·쌀", "img":"category1.webp"}
-    ],
-    "colcategory":[
-        {"id":0, "name":"채소", "img":"colcategory0.webp"},
-        {"id":1, "name":"과일·견과·쌀", "img":"colcategory1.webp"}
+        {"id":0, "name":"채소", "img":"category0.webp", "col":"colcategory0.webp"},
+        {"id":1, "name":"과일·견과·쌀", "img":"category1.webp", "col":"colcategory1.webp"},
+        {"id":2, "name":"수산·해물·건어물", "img":"category2.webp", "col":"colcategory2.webp"},
+        {"id":3, "name":"정육·가공육·계란", "img":"category3.webp", "col":"colcategory3.webp"},
+        {"id":4, "name":"국·반찬·메인요리", "img":"category4.webp", "col":"colcategory4.webp"},
+        {"id":5, "name":"간편식·밀키트·샐러드", "img":"category5.webp", "col":"colcategory5.webp"},
+        {"id":6, "name":"면·양념·오일", "img":"category6.webp", "col":"colcategory6.webp"},
+        {"id":7, "name":"생수·음료·커피", "img":"category7.webp", "col":"colcategory7.webp"},
+        {"id":8, "name":"간식·과자·떡", "img":"category8.webp", "col":"colcategory8.webp"},
+        {"id":9, "name":"베이커리", "img":"category9.webp", "col":"colcategory9.webp"},
+        {"id":10, "name":"유제품", "img":"category10.webp", "col":"colcategory10.webp"},
+        {"id":11, "name":"건강식품", "img":"category11.webp", "col":"colcategory11.webp"},
+        {"id":12, "name":"와인·위스키", "img":"category12.webp", "col":"colcategory12.webp"},
+        {"id":13, "name":"전통주", "img":"category13.webp", "col":"colcategory13.webp"},
+        {"id":14, "name":"주방용품", "img":"category14.webp", "col":"colcategory14.webp"},
+        {"id":15, "name":"생활용품·리빙", "img":"category15.webp", "col":"colcategory15.webp"},
+        {"id":16, "name":"가전제품", "img":"category16.webp", "col":"colcategory16.webp"},
+        {"id":17, "name":"가구·인테리어", "img":"category17.webp", "col":"colcategory17.webp"},
+        {"id":18, "name":"유아동", "img":"category18.webp", "col":"colcategory18.webp"},
+        {"id":19, "name":"스포츠·레져·캠핑", "img":"category19.webp", "col":"colcategory19.webp"},
+        {"id":20, "name":"반려동물", "img":"category20.webp", "col":"colcategory20.webp"},
+        {"id":21, "name":"럭셔리뷰티", "img":"category21.webp", "col":"colcategory21.webp"},
+        {"id":22, "name":"스킨케어·메이크업", "img":"category22.webp", "col":"colcategory22.webp"},
+        {"id":23, "name":"헤어·바디·구강", "img":"category23.webp", "col":"colcategory23.webp"},
+        {"id":24, "name":"컬리의 추천", "img":"category24.webp", "col":"colcategory24.webp"}
     ]
 }
